@@ -18,7 +18,6 @@ jobs:
         with:
           distribution: temurin
           java-version: "17"
-      - uses: android-actions/setup-android@v3
       - uses: gradle/actions/setup-gradle@v4
       - name: Test core logic and build debug APK
         run: ./gradlew --no-daemon :core:test :app:assembleDebug
